@@ -1,17 +1,18 @@
 Bootstrap for meteor
 ====================
 
-This package integrates bootstrap into meteor and lets you configure what parts you need.
+This package integrates bootstrap-material(FezVrasta/bootstrap-material-design) into meteor and lets you configure what parts you need.
 
 How to install
 --------------
 
 
 
-1. execute `meteor add nemo64:bootstrap less`
-2. create an empty `custom.bootstrap.json` file somewhere in your project. (`/client/lib/custom.bootstrap.json` for example)
-3. start meteor and then edit the file you just created (see [custom.bootstrap.json](#custom.bootstrap.json)).
-4. (optional) edit `custom.bootstrap.import.less` which now appeared next to the json file
+1. execute `meteor add bozhao:bootstrap less` or `meteor add nemo64:bootstrap`
+2. execute `meteor add bozhao:bootstrap-material`
+3. create an empty `custom.bootstrap.json` file somewhere in your project. (`/client/lib/custom.material.json` for example)
+4. start meteor and then edit the file you just created (see [custom.material.json](#custom.material.json)).
+5. (optional) edit `custom.material.base.import.less` which now appeared next to the json file
 
 custom.bootstrap.json
 ---------------------
@@ -19,54 +20,33 @@ This file is to configure which bootstrap parts you need in your project. Set th
 If the file is empty, it will be filled for with the following content:
 ```JSON
 {"modules": {
-  "normalize":            true,
-  "print":                false,
-
-  "scaffolding":          false,
-  "type":                 false,
-  "code":                 false,
-  "grid":                 false,
-  "tables":               false,
-  "forms":                false,
-  "buttons":              false,
-
-  "glyphicons":           false,
-  "button-groups":        false,
-  "input-groups":         false,
-  "navs":                 false,
-  "navbar":               false,
-  "breadcrumbs":          false,
-  "pagination":           false,
-  "pager":                false,
-  "labels":               false,
-  "badges":               false,
-  "jumbotron":            false,
-  "thumbnails":           false,
-  "alerts":               false,
-  "progress-bars":        false,
-  "media":                false,
-  "list-group":           false,
-  "panels":               false,
-  "wells":                false,
-  "close":                false,
-
-  "component-animations": false,
-  "dropdowns":            false,
-  "modals":               false,
-  "tooltip":              false,
-  "popovers":             false,
-  "carousel":             false,
-  
-  "affix":                false,
-  "alert":                false,
-  "button":               false,
-  "collapse":             false,
-  "scrollspy":            false,
-  "tab":                  false,
-  "transition":           false,
-
-  "utilities":            false,
-  "responsive-utilities": false
+   "_alerts":                           false,
+   "_buttons":                          false,
+   "_cards":                            false,
+   "_checkboxes":                       false,
+   "_dialogs":                          false,
+   "_icons-material-design":            false,
+   "_icons":                            false,
+   "_inputs":                           false,
+   "_labels":                           false,
+   "_lists":                            false,
+   "_mixins":                           false,
+   "_navbar":                           false,
+   "_panels":                           false,
+   "_plugin-dropdownjs":                false,
+   "_plugin-nouislider":                false,
+   "_plugin-selectize":                 false,
+   "_plugin-snackbarjs":                false,
+   "_popups":                           false,
+   "_radios":                           false,
+   "_shadows":                          false,
+   "_tabs":                             false,
+   "_togglebutton":                     false,
+   "_variables":                        false,
+   "_welljumbo":                        false,
+   "material-wfont":                    false,
+   "material":                          false,
+   "ripples":                           false
 }}
 ```
 
